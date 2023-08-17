@@ -20,8 +20,11 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # this path will display status.html file and call home view function 
     path('',views.home, name='Home'),
+    # this path will display statuscopy.html file and call display view function 
+
     path('display',views.display, name='display'),
     
-
+ 
 ]

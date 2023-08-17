@@ -1,5 +1,6 @@
 from django.shortcuts import render
 import time
+# This calss represent a elevator which can perform start,stop,up,down,open,close 
 class elevate:
     def __init__(self, name, status, work, floor_status):
         self.name = name
@@ -26,10 +27,12 @@ class elevate:
         self.work='close'
     
 
-
+# this home class is view function to display status.html tamplate
 def home(request):
     return render(request,"status.html")
 
+# this home class is view function to display statuscopy.html tamplate 
+# it takes 5 input to call the lift on the perticulaer flore
 def display(request):
     num_elevators = request.GET.get('elevator')
     num_floors = request.GET.get('floor')
