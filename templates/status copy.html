@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+</head>
+    <title>Elevator Status</title>
+    <style>input{display: none;}
+    table, th, td {
+  border: 1px solid black;
+}
+    </style>
+
+</head>
+<body>
+    <hi>Welcome to elevator section</hi>
+    <br>
+    <form action="/display" method="get"><input name="floor" value="{{floor}}" > <input name="elevator" value="{{elevator}}"><button type="submit" name="vfloor" value="0">Ground Floor</button></form>
+    <form action="/display" method="get"><input name="floor" value="{{floor}}"> <input name="elevator" value="{{elevator}}"><button type="submit" name="vfloor" value="1">1st Floor</button></form>
+    <form action="/display" method="get"><input name="floor" value="{{floor}}"> <input name="elevator" value="{{elevator}}"><button type="submit" name="vfloor" value="2">2nd Floor</button></form>
+    <form action="/display" method="get"><input name="floor" value="{{floor}}"> <input name="elevator" value="{{elevator}}"><button type="submit" name="vfloor" value="3">3rd floor</button></form>
+    <form action="/display" method="get"><input name="floor" value="{{floor}}"> <input name="elevator" value="{{elevator}}"><button type="submit" name="vfloor" value="4">4th floor</button></form>
+
+<br>
+<h2>Number of elevator are {{elevator}}</h2>
+<h2>Number of floors are {{floor}}</h2>
+
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Work</th>
+      <th>Floor</th>
+    </tr>
+    <tr>
+      <td>Status of {{name}}</td>
+      <td>Status: {{status}}</td>
+      <td>Woring Status: {{work}}</td>
+      <td>floor : {{vfloor}}</td>
+    </tr>
+    <tr>
+      <td>Status of {{name2}}</td>
+      <td>Status: {{status2}}</td>
+      <td>Woring Status: {{work2}}</td>
+      <td>floor : {{vfloor2}}</td>
+    </tr>
+  </table> 
+
+    
+</body>
+</html>
